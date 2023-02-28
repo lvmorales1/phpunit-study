@@ -20,4 +20,8 @@ $leiloeiro->avalia($leilao);
 
 $maiorValor = $leiloeiro->getMaiorValor();
 
-echo "O maior lance foi de R$ {$maiorValor}";  
+if ($maiorValor == 2500) {
+    echo "TESTE OK";
+} else {
+    echo "TESTE FALHOU";
+}

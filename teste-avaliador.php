@@ -20,10 +20,10 @@ $leilao->recebeLance(new Lance($maria, 2500));
 $leiloeiro = new Avaliador();
 $leiloeiro->avalia($leilao);
 
+$maiorValor = $leiloeiro->getMaiorValor();
+
 // Verifico se o resultado é o esperado
 $valorEsperado = 2500;
-
-$maiorValor = $leiloeiro->getMaiorValor();
 
 if ($maiorValor == $valorEsperado) {
     echo "TESTE OK";
